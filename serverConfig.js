@@ -8,9 +8,9 @@ function get() {
 	return {
 		connectionLimit : 100,
 		host     : 'localhost',
-		database : 'myDB',
-		user     : 'myDBUser',
-		password : 'myPassword',
+		database : 'bank_balance',
+		user     : 'root',
+		password : '',
 		debug    : false
 	};
 }

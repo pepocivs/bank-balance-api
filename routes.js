@@ -1,4 +1,4 @@
-var myDB        = require('./controllers/myDB/myDBController.js');
+var bankBalance = require('./controllers/bankBalance/bankBalanceController.js');
 var fs          = require('fs');
 var packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
 
@@ -17,7 +17,7 @@ function handleRoutes(router) {
 
     // You can add middleware to protect the call (FE: login middleware)
 
-    router.get('/first-call', myDB.getFirstCall);
+    router.get('/balance', bankBalance.getBalance);
 }
 
 module.exports = restRouter;
